@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="" crossorigin="anonymous">
+<style>
+    body{
+        text-align:center!important;
+        background-color: #cad2c5;
+    }
+    canvas, button{
+        background-color: #353535;
+        border-radius: 10px;
+        
+    }
+    .navbar{
+        background-color: #2f3d46;
+        
+    }
+    .navbar_heading{
+        text-align:center;
+    }
+    .mtop{
+        margin-top:50px;
+    }
+   button{
+    width:600px;
+    padding:10px;
+    text-align:left;
+    color:#787878;
+    font-weight:bold;
+   }
+   @media screen and (max-width: 768px) and (min-width: 426px) {
+    .mright {
+    width:50px;
+     }
+    button{
+    width:400px;
+    }
+    .tab_width{
+        width:130px;
+    }
+    .full_width{
+        width:450px;
+    }
+    .colheight{
+        height:300px;
+    }
+
+}
+    
+@media screen and (max-width: 425px) and (min-width: 320px) {
+    button{
+    width:300px;
+    margin-top:20px;
+    }
+    .full_width{
+        width:300px;
+    }
+}
+</style>
+</head>
+<body>
+    <div class="">
+    
+        <div class="row navbar" >
+            <div class="col-md-2">
+                <i class="fa-brands fa-github fa-2x"></i>
+            </div>
+            <div class="col-md-10 navbar_heading">
+                <h3>GITHUB</h3>
+            </div>
+        </div>
+        <div class="row mtop">
+            <div class="col-md-4">
+                <canvas class="colheight" id="myCanvas" width="200" height="400"></canvas>
+            </div>
+        
+            <div class="col-md-8">
+                <div class="row ">
+                    <div class="col-md-12">
+                        <!--<canvas id="myCanvas" height="50" >
+                            <p>SEARCH</p>
+                        </canvas>-->
+                        <button>Search</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12  col-md-4 mtop mright">
+                        <canvas class="tab_width" id="myCanvas" width="200" height="100"></canvas>
+                    </div>
+                    <div class="col-xs-12 col-md-4 mtop mright">
+                        <canvas class="tab_width" id="myCanvas" width="200" height="100"></canvas>
+                    </div>
+                    <div class="col-xs-12 col-md-4 mtop">
+                        <canvas class="tab_width" id="myCanvas" width="200" height="100"></canvas>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mtop">
+                        <canvas class="full_width" id="myCanvas" width="620" height="130"></canvas>
+                    </div>
+                </div>
+                    
+                
+            </div>
+        </div>
+    
+</div>
+</body>
+</html>
